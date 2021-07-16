@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>MFP-K</title>
+<title>V1.1</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:0.1em}0%,to{top:0px}}@keyframes shudder{25%{left:0.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:0.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:0.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%, to{transform:translateX(0em)}5%, 25%, 45%{transform:translateX(-1em)}15%, 35%, 55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%, to{transform:translateY(0em)}5%, 25%, 45%{transform:translateY(-1em)}15%, 35%, 55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%, 8.1%, 82.1%, 31.1%, 38.1%, 44.1%, 40.1%, 47.1%, 74.1%, 16.1%, 27.1%, 72.1%, 24.1%, 95.1%, 6.1%, 36.1%, 20.1%, 4.1%, 91.1%, 14.1%, 87.1%, to{left:0px;top:0px}8%, 82%, 31%, 38%, 44%{left:-1px}40%, 47%, 74%, 16%, 27%{left:1px}72%, 24%, 95%, 6%, 36%{top:-1px}20%, 4%, 91%, 14%, 87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:black;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" title="' attr(title) '">'}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,0.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,0.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,0.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,0.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,0.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,0.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,0.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,0.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,0.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,0.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,0.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,0.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,0.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(title) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:0em 0.5em 0.5em 1em;font-size:1.25em;font-family:sans-serif;color:#000;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit;color:#000}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger .panel-source,tw-debugger .panel-row-source{font-family:monospace;overflow-x:scroll;white-space:pre;-ms-flex-preferred-size:100%;flex-basis:100%}tw-debugger .panel-row-source{margin:5px 0}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background:#EEE}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:0.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:0.8;font-size:0.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#444;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,0.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .error-row>*{display:table-cell;padding:0.25em 0.5em}tw-debugger .error-row .error-message{cursor:help}tw-debugger .error-row .error-passage{color:#444}tw-debugger .storylet-row{background-color:rgba(201,233,222,0.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(128,203,178,0.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;opacity:0.4;background-color:rgba(217,217,217,0.3)}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:rgba(166,166,166,0.3)}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,0.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .tabs{padding-bottom:0.5em}tw-debugger .tab{border-radius:0px 0px 0.5em 0.5em;border-top:none}tw-debugger .resizer{position:absolute;height:3em;border-left:2px solid #ccc;border-right:2px solid #ccc;top:10px;left:4px;width:8px;cursor:ew-resize}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media (min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop ~ tw-backdrop{display:none}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-passage [style^="color"] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-link:hover,tw-passage [style*=" color"][hover="true"] tw-link:hover,tw-passage [style^="color"] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^="color"][hover="true"] .enchantment-link:hover,tw-passage [style*=" color"][hover="true"] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#6941e1}tw-passage [style^="color"] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^="color"][hover="true"] .visited:hover,tw-passage [style*=" color"][hover="true"] .visited:hover{color:inherit}.visited:hover{color:#E3E}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-passage [style^="color"] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-broken-link:hover,tw-passage [style*=" color"][hover="true"] tw-broken-link:hover{color:inherit}.enchantment-mouseover{border-bottom:2px dashed #999}.enchantment-mouseout{border:rgba(64,149,191,0.6) 1px solid}.enchantment-mouseout:hover{background-color:rgba(175,197,207,0.75);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,0.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,0.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 0.5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 0.5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,0.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,0.75);border:transparent 2px solid;border-radius:0.2em}tw-link.enchantment-button,.enchantment-link.enchantment-button,.enchantment-button:not(.enchantment-link) tw-link,.enchantment-button:not(.enchantment-link) .enchantment-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media (min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:transparent;font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:transparent;font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 0.5em}tw-story tw-noscript{animation:appear 0.8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media (min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*="width"]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:0.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:0.2}tw-icon[alt]:hover{opacity:0.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,0.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;padding:2px;white-space:pre}tw-folddown::after{content:"\25b6"}tw-folddown.open::after{content:"\25bc"}tw-open-button::after{content:"Open"}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play MFP-K.</tw-noscript></noscript></tw-story>
-<tw-storydata name="MFP-K" startnode="27" creator="Twine" creator-version="2.3.14" ifid="86E8F437-B2DE-4AA1-8F72-527AEB4281CE" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Roadtrip Intro" tags="" position="799,98" size="100,100">Several years have passed since you&#39;ve finished school. After your capstone demo, an electric vehicle company, $companyName was extremely interested in it and offered you a permanent full-time position as an electrical engineer working on their upcoming fleet of vehicles. 
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play V1.1.</tw-noscript></noscript></tw-story>
+<tw-storydata name="V1.1" startnode="23" creator="Twine" creator-version="2.3.14" ifid="86E8F437-B2DE-4AA1-8F72-527AEB4281CE" zoom="0.6" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Roadtrip Intro" tags="" position="301,298" size="100,100">Several years have passed since you&#39;ve finished school. After your capstone demo, an electric vehicle company, $companyName was extremely interested in it and offered you a permanent full-time position as an electrical engineer working on their upcoming fleet of vehicles. 
 
 You have been working here for a while, using the knowledge you learned from your degree, industry knowledge, and other things you have been reading on. You had the opportunity to work on the motors, batteries, and had the chance to learn about the chassis of the vehicles. Your developments and advancements have been vital to the company&#39;s success and have gone through a couple of promotions. 
 
@@ -19,44 +19,44 @@ As a bonus for your performance, $companyName gave you the opportunity to custom
 
 (set: $companyName to &quot;Electric Vx Co.&quot;)
 
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="2" name="Choose Your Frame" tags="" position="1000,199" size="100,100">You get to choose what goes into your car. What size car would you like?
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="2" name="Choose Your Frame" tags="" position="498,295" size="100,100">You get to choose what goes into your car. What size car would you like?
 [[Compact Frame -&gt;Choose your Add-On]]
 [[Sedan Frame -&gt;Choose your Add-On]]
 [[SUV Frame -&gt;Choose your Add-On]]
 [[Minivan Frame -&gt;Choose your Add-On]]
 
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="3" name="I would rather have an IC instead" tags="" position="146,1207" size="100,100"></tw-passagedata><tw-passagedata pid="4" name="Choose your Add-On" tags="" position="1000,350" size="100,100">Choose an Add-On for your vehicle
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="3" name="Choose your Add-On" tags="" position="702,299" size="100,100">Choose an Add-On for your vehicle
 
 [[Extra Mileage-&gt;Choose your Battery Type]]
 [[Self-Driving-&gt;Choose your Battery Type]]
 [[In-Car Wi-Fi-&gt;Choose your Battery Type]]
 
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="5" name="Choose your Battery Type" tags="" position="1000,499" size="100,100">Every Electric Vehicle needs a battery to run and power it. Choose one!
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="4" name="Choose your Battery Type" tags="" position="903,301" size="100,100">Every Electric Vehicle needs a battery to run and power it. Choose one!
 
 [[Lithium Ion Battery]]
 [[Nickel-Metal Battery]]
 [[Lead-Acid Battery]]
 
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="6" name="Lithium Ion Battery" tags="" position="774,648" size="100,100">After a few months, your car is delivered to you and you decide to take a small trip around for a long weekend. 
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="5" name="Lithium Ion Battery" tags="" position="1252,202" size="100,100">After a few months, your car is delivered to you and you decide to take a small trip around for a long weekend. 
 
 [[Start Your Trip]]
 
 (set: $batteryType to &quot;Lithium-Ion&quot;)
 
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="7" name="Nickel-Metal Battery" tags="" position="925,647" size="100,100">After a few months, your car is delivered to you and you decide to take a small trip around for a long weekend. 
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="6" name="Nickel-Metal Battery" tags="" position="1254,314" size="100,100">After a few months, your car is delivered to you and you decide to take a small trip around for a long weekend. 
 [[Start Your Trip]]
 
 (set: $batteryType to &quot;Nickel-Metal&quot;)
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="8" name="Lead-Acid Battery" tags="" position="1075,649" size="100,100">After a few months, your car is delivered to you and you decide to take a small trip around for a long weekend. 
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="7" name="Lead-Acid Battery" tags="" position="1259,427" size="100,100">After a few months, your car is delivered to you and you decide to take a small trip around for a long weekend. 
 [[Start Your Trip]]
 
 (set: $batteryType to &quot;Lead-Acid&quot;)
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="9" name="Start Your Trip" tags="" position="1000,799" size="100,100">You&#39;ve had a couple of places you wanted to visit of a while now, but you never had the time to actually visit them. Now that you have some time, choose a place you&#39;ve always wanted to visit.
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="8" name="Start Your Trip" tags="" position="1495,500" size="100,100">You&#39;ve had a couple of places you wanted to visit of a while now, but you never had the time to actually visit them. Now that you have some time, choose a place you&#39;ve always wanted to visit.
 
 [[Conservation Area]]
 [[Museum]]
 
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="10" name="Conservation Area" tags="" position="800,1000" size="100,100">You drive to a Conservation Area 1 hour away from your place. You park your car in the parking lot and decide to go a solo hike around the park. You spend the day in the woods, walking down the river, bird-watching, and having a picnic near the trees. It&#39;s a change of pace compared to the office, and you feel as if you can relax for the first time in weeks.
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="9" name="Conservation Area" tags="" position="301,594" size="100,100">You drive to a Conservation Area 1 hour away from your place. You park your car in the parking lot and decide to go a solo hike around the park. You spend the day in the woods, walking down the river, bird-watching, and having a picnic near the trees. It&#39;s a change of pace compared to the office, and you feel as if you can relax for the first time in weeks.
 
 After a long day, you leave the park refreshed and you head back to your car. You notice that your battery levels are close to running out. You deicde to drive to the nearest charging station. 
 
@@ -64,7 +64,7 @@ After a long day, you leave the park refreshed and you head back to your car. Yo
 
 [[Recharge Your Car -&gt;Charging Station]]
 
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="11" name="Museum" tags="" position="1200,1000" size="100,100">You decide to take a trip to a historical museum. You park your car in the museum&#39;s underground parking lot and buy a day pass to the museum. You spend the day looking at exhibits from different time periods, take extra time to marvel on the wonders of the ancient world. You also decide to purchase bonus tickets to the butterfly exhibit explored that area as well. 
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="10" name="Museum" tags="" position="300,699" size="100,100">You decide to take a trip to a historical museum. You park your car in the museum&#39;s underground parking lot and buy a day pass to the museum. You spend the day looking at exhibits from different time periods, take extra time to marvel on the wonders of the ancient world. You also decide to purchase bonus tickets to the butterfly exhibit explored that area as well. 
 
 You leave the museum with all the pictures you took and head back to your car. You notice that your battery levels are close to running out. You deicde to drive to the nearest charging station. 
 
@@ -72,7 +72,7 @@ You leave the museum with all the pictures you took and head back to your car. Y
 
 [[Recharge Your Car -&gt;Charging Station]]
 
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="12" name="Charging Station" tags="" position="1000,1199" size="100,100">You plug the charger in and your car starts to charge.
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="11" name="Charging Station" tags="" position="504,802" size="100,100">You plug the charger in and your car starts to charge.
 
 You think about how do electric vehicle chargers get their power from. You remember that it&#39;s simply generated like all other forms of electricity. You think about what happens if an area is only powered by non-renewable resources, and is potentially using those sources to power your electric vehicle. 
 
@@ -80,14 +80,14 @@ You keep that thought in the back of your mind, wondering why you haven&#39;t co
 
 [[Continue-&gt;Plug Charger In]]
 
-(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="13" name="Plug Charger In" tags="" position="999,1349" size="100,100">It is 9:00PM. You&#39;ve spent several hours on the road already. The car battery says it will take about 2 - 3 hours to fully recharge. It&#39;s pretty late outside and you&#39;re looking to have some form of rest
+(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="12" name="Plug Charger In" tags="" position="697,800" size="100,100">It is 9:00PM. You&#39;ve spent several hours on the road already. The car battery says it will take about 2 - 3 hours to fully recharge. It&#39;s pretty late outside and you&#39;re looking to have some form of rest
 
 Across the street, you see a hotel. You&#39;ve been out for a while and the exhaustion is hitting you. Do you:
 
 [[Get yourself a room at the hotel]]
 [[Sleep in your car]]
 
-(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="14" name="Get yourself a room at the hotel" tags="" position="828,1499" size="100,100">You walk to the hotel across the street. The warm glow of incandescent lightbulbs glows as the sun goes down. The receptionist checks you in for a 1 bed room to be checked out tomorrow morning. 
+(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="13" name="Get yourself a room at the hotel" tags="" position="899,899" size="100,100">You walk to the hotel across the street. The warm glow of incandescent lightbulbs glows as the sun goes down. The receptionist checks you in for a 1 bed room to be checked out tomorrow morning. 
 
 You carry your belongings to your room and settle in for the night. After decompressing, you hop into bed and you get into your relaxing routine. Do you:
 
@@ -95,21 +95,13 @@ You carry your belongings to your room and settle in for the night. After decomp
 
 (set: $place to &quot;Hotel&quot;)
 
-(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="15" name="Sleep in your car" tags="" position="1000,1497" size="100,100">Chill for a bit
+(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="14" name="Sleep in your car" tags="" position="910,714" size="100,100">You stay near your car as you wait for it to fully charge. As this will take a while, you decide to take out your phone and scroll reddit to pass the time. 
 
 [[Scroll Reddit]] 
 
 (set: $place to &quot;Car&quot;)
 
-(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="16" name="Turn on the TV" tags="" position="196,1603" size="100,100">Turning on the news
-
-(if: $batteryType is &quot;Lithium-Ion&quot;)[Some news story for Lithium Ion]
-(else-if: $batteryType is &quot;Nickel-Metal&quot;)[The text to show if Nickel-Metal was selected]
-(else-if: $batteryType is &quot;Lead-Acid&quot;)[The text to show if Lead-Acid was selected]
-(else-if: $batteryType is &quot;Ultracapacitor&quot;)[The text to show if Ultracapacitor was selected]
-
-[[Keep Watching-&gt;Keep Watching News 1]]
-</tw-passagedata><tw-passagedata pid="17" name="Scroll Reddit" tags="" position="1005,1646" size="100,100">You take out your phone and open the reddit app. It&#39;s been a while since you&#39;ve scrolled, so you decide to go to your tailored front page and see what&#39;s new. 
+(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="15" name="Scroll Reddit" tags="" position="1195,805" size="100,100">You take out your phone and open the reddit app. It&#39;s been a while since you&#39;ve scrolled, so you decide to go to your tailored front page and see what&#39;s new. 
 
 Apart from the endless memes of England losing, the technology subreddits you browse have nothing new. Green energy posts seem to be appearing more and more now, after Reddit learned about your tastes.
 
@@ -130,20 +122,11 @@ While browsing,
 
 [[Open Link-&gt;Post Title 1]]
 
-(enchant: ?Page, (background: #434f05))</tw-passagedata><tw-passagedata pid="18" name="Sleep 1" tags="" position="1002,2098" size="100,100">You sleep for the rest of the night, where you plan on going home the next morning.
+(enchant: ?Page, (background: #434f05))</tw-passagedata><tw-passagedata pid="16" name="Sleep 1" tags="" position="1304,1100" size="100,100">You sleep for the rest of the night, where you plan on going home the next morning.
 
 [[Wake Up-&gt;Wake Up 1]]
 
-(enchant: ?Page, (background: #4f3f05))</tw-passagedata><tw-passagedata pid="19" name="Keep Watching News 1" tags="" position="195,1748" size="100,100">A second story
-
-(if: $batteryType is &quot;Lithium-Ion&quot;)[Some news story for Lithium Ion]
-(else-if: $batteryType is &quot;Nickel-Metal&quot;)[The text to show if Nickel-Metal was selected]
-(else-if: $batteryType is &quot;Lead-Acid&quot;)[The text to show if Lead-Acid was selected]
-(else-if: $batteryType is &quot;Ultracapacitor&quot;)[The text to show if Ultracapacitor was selected]
-
-[[Keep Watching-&gt;Keep Watching News 2]]
-</tw-passagedata><tw-passagedata pid="20" name="Keep Watching News 2" tags="" position="197,1903" size="100,100">The news ended
-</tw-passagedata><tw-passagedata pid="21" name="Post 1 Content" tags="" position="1206,1751" size="100,100">You scroll down the article and read the following
+(enchant: ?Page, (background: #4f3f05))</tw-passagedata><tw-passagedata pid="17" name="Post 1 Content" tags="" position="505,1099" size="100,100">You scroll down the article and read the following
 
 (if: $batteryType is &quot;Lithium-Ion&quot;)[ 
 &lt;img src=&quot;img/LI_content.png&quot; alt=&quot;Mining and processing the minerals, plus the battery manufacturing process, involve substantial emissions of carbon. Lithium mining, needed to build the lithium ion batteries at the heart of today&#39;s EVs, has also been connected to other kinds of environmental harm. There have been mass fish kills related to lithium mining in Tibet, for example.&quot;&gt;
@@ -164,20 +147,20 @@ The WHO report also highlighted cases in Senegal, Dominican Republic, and Vietna
 
 [[Keep Scrolling Reddit-&gt;Post 2]]
 
-(enchant: ?Page, (background: #4e4f05))</tw-passagedata><tw-passagedata pid="22" name="Wake Up 1" tags="" position="1002,2246" size="100,100">(if: $place is &quot;Hotel&quot;)[You wake up to the sunrise the next morning. Birds chirp outside your window. You get out of bed, check out of the hotel and head to your car that has been charging overnight.]
+(enchant: ?Page, (background: #4e4f05))</tw-passagedata><tw-passagedata pid="18" name="Wake Up 1" tags="" position="303,1302" size="100,100">(if: $place is &quot;Hotel&quot;)[You wake up to the sunrise the next morning. Birds chirp outside your window. You get out of bed, check out of the hotel and head to your car that has been charging overnight.]
 (else:)[You wake up to the sunrise after sleeping in your backseat. You step out of the car to stretch and you hear birds chirping in the distance.]
 
 You walk to a coffee shop down the street and buy yourself breakfast before driving back. You finish breakfast and quickly down a cup of coffee before hitting the road.
 
 [[Continue-&gt;Brakes]] 
 
-(enchant: ?Page, (background: #4f3f05))</tw-passagedata><tw-passagedata pid="23" name="Brakes" tags="" position="1000,2599" size="100,100">While driving down a narrow portion some car decides to brake check in front of you. You decide to:
+(enchant: ?Page, (background: #4f3f05))</tw-passagedata><tw-passagedata pid="19" name="Brakes" tags="" position="605,1301" size="100,100">While driving down a narrow portion some car decides to brake check in front of you. You decide to:
 
 have a picture of a thin road shoulder wall and cars on the left hand side
 [[Swerve-&gt;Crashed Car]]
 [[Hit the Brakes-&gt;Tire Marks]]
 
-(enchant: ?Page, (background: #4f3f05))</tw-passagedata><tw-passagedata pid="24" name="Crashed Car" tags="" position="925,2748" size="100,100">You crashed your car, skid marks are everywhere on the pavement. You&#39;re stuck in a ditch, but you miraculously came out without injuries.
+(enchant: ?Page, (background: #4f3f05))</tw-passagedata><tw-passagedata pid="20" name="Crashed Car" tags="" position="806,1436" size="100,100">You crashed your car, skid marks are everywhere on the pavement. You&#39;re stuck in a ditch, but you miraculously came out without injuries.
 
 While waiting for help to come, you think back to school and remember that your build of an electric vehicle is much heavier than its non-electric vehicle counterpart, mostly due to the weight of the battery. That means the skid marks from your tires end up releasing more particles out, most of which aren&#39;t good for the environment. 
 
@@ -188,7 +171,7 @@ Your car will need to be scrapped.
 [[Continue-&gt;End]] 
 
 (enchant: ?Page, (background: #4f2105))
-(set: $crash to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="25" name="Tire Marks" tags="" position="1075,2749" size="100,100">You hit the brakes in time, and your tires leave skid marks on the road. You pass the other driver and keep driving.
+(set: $crash to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="21" name="Tire Marks" tags="" position="800,1299" size="100,100">You hit the brakes in time, and your tires leave skid marks on the road. You pass the other driver and keep driving.
 
 While driving back, you think back to school and remember that your build of an electric vehicle is much heavier than its non-electric vehicle counterpart, mostly due to the weight of the battery. That means the skid marks from your tires end up releasing more particles out, most of which aren&#39;t good for the environment. 
 
@@ -197,46 +180,46 @@ While driving back, you think back to school and remember that your build of an 
 [[Continue-&gt;End]]
 
 (enchant: ?Page, (background: #4f2105))
-(set: $crash to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="26" name="End" tags="" position="996,3075" size="100,100">You eventually make it home safely and call it a day.
+(set: $crash to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="22" name="End" tags="" position="999,1296" size="100,100">You eventually make it home safely and call it a day.
 (if: $crash is &quot;true&quot;)[Your car ended up going to disposal and your insurance covered the cost]
 (else:)[You keep the car and continue using it for the next couple of years.]
 
 [[Continue-&gt;End End]]
 
 
-(enchant: ?Page, (background: #4f2105))</tw-passagedata><tw-passagedata pid="27" name="Start" tags="" position="271,103" size="100,100">It&#39;s 8:30 AM on a Wednesday morning. The sun rises behind the engineering buildings as students file into their early morning classes. You walk into your 4th year electrical engineering course about sustainability vehicles. 
+(enchant: ?Page, (background: #4f2105))</tw-passagedata><tw-passagedata pid="23" name="Start" tags="" position="297,102" size="100,100">It&#39;s 8:30 AM on a Wednesday morning. The sun rises behind the engineering buildings as students file into their early morning classes. You walk into your 4th year electrical engineering course about sustainability vehicles. 
 
 You&#39;re looking for the next big idea in green energy and are particularlly interested in electric vehicles. You&#39;ve been following it for a couple of years and are excited to be doing your capstone about electric vehicles. The class you are taking right now is something you&#39;re looking forward to.
 
 [[Continue-&gt;Class]]
 
-(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="28" name="Class" tags="" position="272,254" size="100,100">(set: $professorName to &quot;Debebe&quot;)
+(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="24" name="Class" tags="" position="498,102" size="100,100">(set: $professorName to &quot;Debebe&quot;)
 
 Professor $professorName is currently teaching this class. You have been in contact with them regarding your capstone project and how to further improve the battery implementation in your design. Professor $professorName starts their lecture for their class. Their voice echoes through the lecture hall while they write notes on the whiteboard. 
 
 [[Continue-&gt;Class Notes 1]]
 
-(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="29" name="Class Notes 1" tags="" position="270,404" size="100,100">You intently listen and take notes as Professor $professorName talks
+(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="25" name="Class Notes 1" tags="" position="701,101" size="100,100">You intently listen and take notes as Professor $professorName talks
 
 &lt;img src=&quot;img/LI_chalkboard_1.png&quot; alt=&quot;Lithium-ion batteries have the properties: high energy efficacy, high unit energy storage. used in many rechargable electronic technologies&quot;&gt;
 //Caption: Lithium-ion batteries have the properties: high energy efficacy, high unit energy storage. used in many rechargable electronic technologies//
 
 [[Next Slide-&gt;Class Notes 2]]
 
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="30" name="Class Notes 2" tags="" position="269,552" size="100,100">You intently listen and take notes as Professor $professorName talks
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="26" name="Class Notes 2" tags="" position="898,103" size="100,100">You intently listen and take notes as Professor $professorName talks
 
 &lt;img src=&quot;img/LI_chalkboard_1.png&quot; alt=&quot;advancements in the lithium-ion battery will allow for faster charging. researchers have successfully created lithium-ion batteries that can charge within 10 minutes&quot;&gt;
 //Caption: advancements in the lithium-ion battery will allow for faster charging. researchers have successfully created lithium-ion batteries that can charge within 10 minutes//
 
 [[Next Slide-&gt;Class Notes 3]]
 
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="31" name="Class Notes 3" tags="" position="269,703" size="100,100">Professor $professorName ends their class after an hour. You decide to talk with them after class a bit about new developments in electric vehicles and what it means for the world. You know for a fact that this is the path you want to go down, and you are hoping to join a company that develops electric vehicles. 
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="27" name="Class Notes 3" tags="" position="1102,105" size="100,100">Professor $professorName ends their class after an hour. You decide to talk with them after class a bit about new developments in electric vehicles and what it means for the world. You know for a fact that this is the path you want to go down, and you are hoping to join a company that develops electric vehicles. 
 
 After a couple of minutes of conversing, you leave class to join your teammates on your capstone.
 
 [[Leave Class-&gt;Roadtrip Intro]]
 
-(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="32" name="Blank" tags="" position="145,1086" size="100,100"></tw-passagedata><tw-passagedata pid="33" name="Post Title 1" tags="" position="829,1817" size="100,100">You open the article and scroll through it. You decide to read the article and come across a few excerpts
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="28" name="Post Title 1" tags="" position="300,1099" size="100,100">You open the article and scroll through it. You decide to read the article and come across a few excerpts
 
 (if: $batteryType is &quot;Lithium-Ion&quot;)[ 
 &lt;img src=&quot;img/LI_title.png&quot; alt=&quot;CBC article, titled Electric vehicles are supposed to be green, but the truth is a bit murkier&quot;&gt;
@@ -253,7 +236,7 @@ After a couple of minutes of conversing, you leave class to join your teammates 
 
 [[Keep Scrolling-&gt;Post 1 Content]]
 
-(enchant: ?Page, (background: #484f05))</tw-passagedata><tw-passagedata pid="34" name="Post 2" tags="" position="1392,1770" size="100,100">You keep scrolling reddit and you stumble upon a related video. You open it to watch it.
+(enchant: ?Page, (background: #484f05))</tw-passagedata><tw-passagedata pid="29" name="Post 2" tags="" position="704,1100" size="100,100">You keep scrolling reddit and you stumble upon a related video. You open it to watch it.
 
 &lt;img src=&quot;img/video_1.png&quot; alt=&quot;Reddit post titled, Mining for rare-earth metals for the production of electric batteries contaminates surrounding environment. Pollutants damage local agriculture and have caused serious illnesses in local residents. The video has the following text, the bad side is potential pollution and water shortages. They take the water, life is gone&quot;&gt;
 //Caption: Mining for rare-earth metals for the production of electric batteries contaminates surrounding environment. Pollutants damage local agriculture and have caused serious illnesses in local residents. 
@@ -261,14 +244,14 @@ the bad side is potential pollution and water shortages. They take the water, li
 
 [[Keep Watching-&gt;Post 2 Content 1]]
 
-(enchant: ?Page, (background: #4f4e05))</tw-passagedata><tw-passagedata pid="35" name="Post 2 Content 1" tags="" position="1392,1920" size="100,100">You keep watching the video
+(enchant: ?Page, (background: #4f4e05))</tw-passagedata><tw-passagedata pid="30" name="Post 2 Content 1" tags="" position="903,1105" size="100,100">You keep watching the video
 
 &lt;img src=&quot;img/video_2.png&quot; alt=&quot;Second frame from the video, with text, When it rains hard, it seems like blood running down&quot;&gt;
 //Caption: When it rains hard, it seems like blood running down//
 
 [[Keep Watching-&gt;Post 2 Content 2]]
 
-(enchant: ?Page, (background: #4f4b05))</tw-passagedata><tw-passagedata pid="36" name="Post 2 Content 2" tags="" position="1392,2070" size="100,100">You keep watching the video
+(enchant: ?Page, (background: #4f4b05))</tw-passagedata><tw-passagedata pid="31" name="Post 2 Content 2" tags="" position="1101,1103" size="100,100">You keep watching the video
 &lt;img src=&quot;img/video_3.png&quot; alt=&quot;Third frame of the video, with text, the rice was lost, the yams, banana, yucca, fish, all of that has been lost. Why? because there is so much pollution&quot;&gt;
 //Caption: Third frame of the video, with text, the rice was lost, the yams, banana, yucca, fish, all of that has been lost. Why? because there is so much pollution//
 
@@ -276,7 +259,7 @@ After finishing the video, you decide to call it a day and head to sleep.
 
 [[Sleep-&gt;Sleep 1]] 
 
-(enchant: ?Page, (background: #4f4605))</tw-passagedata><tw-passagedata pid="37" name="End End" tags="" position="996,3225" size="100,100">The articles you saw last night still linger in your head, and you wonder what else you&#39;ve been working on has effects in other places of the world.</tw-passagedata></tw-storydata>
+(enchant: ?Page, (background: #4f4605))</tw-passagedata><tw-passagedata pid="32" name="End End" tags="" position="1201,1302" size="100,100">The articles you saw last night still linger in your head, and you wonder what else you&#39;ve been working on has effects in other places of the world.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
