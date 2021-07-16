@@ -9,78 +9,99 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play MFP-K.</tw-noscript></noscript></tw-story>
-<tw-storydata name="MFP-K" startnode="50" creator="Twine" creator-version="2.3.14" ifid="86E8F437-B2DE-4AA1-8F72-527AEB4281CE" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Roadtrip Intro" tags="" position="799,99" size="100,100">Several months pass and you find out you win a car
+<tw-storydata name="MFP-K" startnode="27" creator="Twine" creator-version="2.3.14" ifid="86E8F437-B2DE-4AA1-8F72-527AEB4281CE" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Roadtrip Intro" tags="" position="799,98" size="100,100">Several years have passed since you&#39;ve finished school. After your capstone demo, an electric vehicle company, $companyName was extremely interested in it and offered you a permanent full-time position as an electrical engineer working on their upcoming fleet of vehicles. 
 
-You end up graduating and decide to take a road trip
+You have been working here for a while, using the knowledge you learned from your degree, industry knowledge, and other things you have been reading on. You had the opportunity to work on the motors, batteries, and had the chance to learn about the chassis of the vehicles. Your developments and advancements have been vital to the company&#39;s success and have gone through a couple of promotions. 
 
-The company calls you up and explains how the selection works
+As a bonus for your performance, $companyName gave you the opportunity to customize your own electric vehicle and keep it for yourself. You can make it however you like, and it would be devliered to you whenever it is ready.
 
+[[Let&#39;s Go! -&gt;Choose Your Frame]]
 
+(set: $companyName to &quot;Electric Vx Co.&quot;)
 
-User is given a single choice for EV [[Let&#39;s Go! -&gt;Choose Your Frame]]
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="2" name="Choose Your Frame" tags="" position="1000,199" size="100,100">You get to choose what goes into your car. What size car would you like?
+[[Compact Frame -&gt;Choose your Add-On]]
+[[Sedan Frame -&gt;Choose your Add-On]]
+[[SUV Frame -&gt;Choose your Add-On]]
+[[Minivan Frame -&gt;Choose your Add-On]]
 
-Force a Dark UX pattern here that allows to choose combustion engine [[I would rather have an IC instead]]</tw-passagedata><tw-passagedata pid="2" name="Choose Your Frame" tags="" position="1000,200" size="100,100">You get to choose what goes into your car. What size car would you like?
-[[Compact Frame -&gt;Choose your Engine]]
-[[Sedan Frame -&gt;Choose your Engine]]
-[[SUV Frame -&gt;Choose your Engine]]
-[[Minivan Frame -&gt;Choose your Engine]]</tw-passagedata><tw-passagedata pid="3" name="I would rather have an IC instead" tags="" position="600,199" size="100,100">Standard multiple blurbs about combustion engines and the environment and oil and all of that [[Keep Going]]</tw-passagedata><tw-passagedata pid="4" name="Keep Going" tags="" position="600,350" size="100,100">You get a new upgrade
-[[Upgrade -&gt;Choose Your Frame]] </tw-passagedata><tw-passagedata pid="5" name="Choose your Engine" tags="" position="1000,350" size="100,100">something about engines
-Still need to research about it
-[[Choose your Battery Type]]</tw-passagedata><tw-passagedata pid="6" name="Choose your Battery Type" tags="" position="1000,500" size="100,100">Every Electric Vehicle needs a battery to run and power it
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="3" name="I would rather have an IC instead" tags="" position="146,1207" size="100,100"></tw-passagedata><tw-passagedata pid="4" name="Choose your Add-On" tags="" position="1000,350" size="100,100">Choose an Add-On for your vehicle
+
+[[Extra Mileage-&gt;Choose your Battery Type]]
+[[Self-Driving-&gt;Choose your Battery Type]]
+[[In-Car Wi-Fi-&gt;Choose your Battery Type]]
+
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="5" name="Choose your Battery Type" tags="" position="1000,499" size="100,100">Every Electric Vehicle needs a battery to run and power it. Choose one!
 
 [[Lithium Ion Battery]]
 [[Nickel-Metal Battery]]
 [[Lead-Acid Battery]]
-[[Ultracapacitor Battery]]</tw-passagedata><tw-passagedata pid="7" name="Lithium Ion Battery" tags="" position="774,649" size="100,100">Stats about this battery - make the user feel good
-[[Start Your Road Trip]]
 
-(set: $batteryType to &quot;Lithium-Ion&quot;)</tw-passagedata><tw-passagedata pid="8" name="Nickel-Metal Battery" tags="" position="925,647" size="100,100">Stats about this battery - make the user feel good
-[[Start Your Road Trip]]
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="6" name="Lithium Ion Battery" tags="" position="774,648" size="100,100">After a few months, your car is delivered to you and you decide to take a small trip around for a long weekend. 
 
-(set: $batteryType to &quot;Nickel-Metal&quot;)</tw-passagedata><tw-passagedata pid="9" name="Lead-Acid Battery" tags="" position="1075,649" size="100,100">Stats about this battery - make the user feel good
-[[Start Your Road Trip]]
+[[Start Your Trip]]
 
-(set: $batteryType to &quot;Lead-Acid&quot;)</tw-passagedata><tw-passagedata pid="10" name="Ultracapacitor Battery" tags="" position="1225,650" size="100,100">Stats about this battery - make the user feel good
-[[Start Your Road Trip]]
+(set: $batteryType to &quot;Lithium-Ion&quot;)
 
-(set: $batteryType to &quot;Ultracapacitor&quot;)</tw-passagedata><tw-passagedata pid="11" name="Start Your Road Trip" tags="" position="1000,800" size="100,100">A couple of options about (color: &#39;#FFFFFF&#39;)[[test]] where to go
-Maybe talk about something related to the environment or politics or whatever influences it
-[[Area 1]]
-[[Area 2]]
-[[Area 3]]
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="7" name="Nickel-Metal Battery" tags="" position="925,647" size="100,100">After a few months, your car is delivered to you and you decide to take a small trip around for a long weekend. 
+[[Start Your Trip]]
 
-Your battery type is $batteryType
-</tw-passagedata><tw-passagedata pid="12" name="Area 1" tags="" position="800,1000" size="100,100">Something about Area 1
+(set: $batteryType to &quot;Nickel-Metal&quot;)
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="8" name="Lead-Acid Battery" tags="" position="1075,649" size="100,100">After a few months, your car is delivered to you and you decide to take a small trip around for a long weekend. 
+[[Start Your Trip]]
 
-[[Next Area -&gt;PreCharge Area]]
-[[Recharge Your Car -&gt;Charging Station]]</tw-passagedata><tw-passagedata pid="13" name="Area 2" tags="" position="1000,1000" size="100,100">Something about Area 2
+(set: $batteryType to &quot;Lead-Acid&quot;)
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="9" name="Start Your Trip" tags="" position="1000,799" size="100,100">You&#39;ve had a couple of places you wanted to visit of a while now, but you never had the time to actually visit them. Now that you have some time, choose a place you&#39;ve always wanted to visit.
 
-[[Next Area -&gt;PreCharge Area]]
-[[Recharge Your Car -&gt;Charging Station]]</tw-passagedata><tw-passagedata pid="14" name="Area 3" tags="" position="1200,1000" size="100,100">Something about Area 3
+[[Conservation Area]]
+[[Museum]]
 
-[[Next Area -&gt;PreCharge Area]]
-[[Recharge Your Car -&gt;Charging Station]]</tw-passagedata><tw-passagedata pid="15" name="Charging Station" tags="" position="1000,1200" size="100,100">You plug the charger in
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="10" name="Conservation Area" tags="" position="800,1000" size="100,100">You drive to a Conservation Area 1 hour away from your place. You park your car in the parking lot and decide to go a solo hike around the park. You spend the day in the woods, walking down the river, bird-watching, and having a picnic near the trees. It&#39;s a change of pace compared to the office, and you feel as if you can relax for the first time in weeks.
 
-[[Plug Charger In]]
+After a long day, you leave the park refreshed and you head back to your car. You notice that your battery levels are close to running out. You deicde to drive to the nearest charging station. 
 
-(set: $carBatteryPercentage to 20)</tw-passagedata><tw-passagedata pid="16" name="PreCharge Area" tags="" position="600,1200" size="100,100">Blurb before going to Charging Area
+&lt;img src=&quot;img/IMG_6540.JPG&quot; alt=&quot;Image of a conservation area&quot;&gt;
 
-[[Recharge Your Car -&gt;Charging Station]] </tw-passagedata><tw-passagedata pid="17" name="test" tags="" position="799,801" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name="Plug Charger In" tags="" position="1000,1350" size="100,100">It is 9:00PM. There is a hotel nearby/ Do you
+[[Recharge Your Car -&gt;Charging Station]]
+
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="11" name="Museum" tags="" position="1200,1000" size="100,100">You decide to take a trip to a historical museum. You park your car in the museum&#39;s underground parking lot and buy a day pass to the museum. You spend the day looking at exhibits from different time periods, take extra time to marvel on the wonders of the ancient world. You also decide to purchase bonus tickets to the butterfly exhibit explored that area as well. 
+
+You leave the museum with all the pictures you took and head back to your car. You notice that your battery levels are close to running out. You deicde to drive to the nearest charging station. 
+
+&lt;img src=&quot;img/museum.jpg&quot; alt=&quot;Image of a museum&quot;&gt;
+
+[[Recharge Your Car -&gt;Charging Station]]
+
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="12" name="Charging Station" tags="" position="1000,1199" size="100,100">You plug the charger in and your car starts to charge.
+
+You think about how do electric vehicle chargers get their power from. You remember that it&#39;s simply generated like all other forms of electricity. You think about what happens if an area is only powered by non-renewable resources, and is potentially using those sources to power your electric vehicle. 
+
+You keep that thought in the back of your mind, wondering why you haven&#39;t considered it before. 
+
+[[Continue-&gt;Plug Charger In]]
+
+(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="13" name="Plug Charger In" tags="" position="999,1349" size="100,100">It is 9:00PM. You&#39;ve spent several hours on the road already. The car battery says it will take about 2 - 3 hours to fully recharge. It&#39;s pretty late outside and you&#39;re looking to have some form of rest
+
+Across the street, you see a hotel. You&#39;ve been out for a while and the exhaustion is hitting you. Do you:
+
 [[Get yourself a room at the hotel]]
 [[Sleep in your car]]
-[[Plan to Drive during through the night]]</tw-passagedata><tw-passagedata pid="19" name="Get yourself a room at the hotel" tags="" position="849,1500" size="100,100">You have dinner. Chill for a bit
 
-[[Turn on the TV]]
+(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="14" name="Get yourself a room at the hotel" tags="" position="828,1499" size="100,100">You walk to the hotel across the street. The warm glow of incandescent lightbulbs glows as the sun goes down. The receptionist checks you in for a 1 bed room to be checked out tomorrow morning. 
+
+You carry your belongings to your room and settle in for the night. After decompressing, you hop into bed and you get into your relaxing routine. Do you:
+
 [[Scroll Reddit]]
-</tw-passagedata><tw-passagedata pid="20" name="Sleep in your car" tags="" position="1000,1497" size="100,100">Chill for a bit
 
-[[Scroll Reddit]] </tw-passagedata><tw-passagedata pid="21" name="Plan to Drive during through the night" tags="" position="1401,1502" size="100,100">You wait a bit to charge through the night and drive off with coffee in your hand
+(set: $place to &quot;Hotel&quot;)
 
-To keep yourself extra awake and not bored, you decide to
+(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="15" name="Sleep in your car" tags="" position="1000,1497" size="100,100">Chill for a bit
 
-[[Turn on the Radio-&gt;Radio 1]]
-[[Listen to a Podcast-&gt;Podcast 1]]
-[[Keep Driving-&gt;Keep Driving 1]]</tw-passagedata><tw-passagedata pid="22" name="Turn on the TV" tags="" position="695,1600" size="100,100">Turning on the news
+[[Scroll Reddit]] 
+
+(set: $place to &quot;Car&quot;)
+
+(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="16" name="Turn on the TV" tags="" position="196,1603" size="100,100">Turning on the news
 
 (if: $batteryType is &quot;Lithium-Ion&quot;)[Some news story for Lithium Ion]
 (else-if: $batteryType is &quot;Nickel-Metal&quot;)[The text to show if Nickel-Metal was selected]
@@ -88,17 +109,32 @@ To keep yourself extra awake and not bored, you decide to
 (else-if: $batteryType is &quot;Ultracapacitor&quot;)[The text to show if Ultracapacitor was selected]
 
 [[Keep Watching-&gt;Keep Watching News 1]]
-[[Sleep-&gt;Sleep 1]] </tw-passagedata><tw-passagedata pid="23" name="Scroll Reddit" tags="" position="1206,1602" size="100,100">You casually scroll reddit
+</tw-passagedata><tw-passagedata pid="17" name="Scroll Reddit" tags="" position="1005,1646" size="100,100">You take out your phone and open the reddit app. It&#39;s been a while since you&#39;ve scrolled, so you decide to go to your tailored front page and see what&#39;s new. 
 
-(if: $batteryType is &quot;Lithium-Ion&quot;)[Some news story for Lithium Ion]
-(else-if: $batteryType is &quot;Nickel-Metal&quot;)[The text to show if Nickel-Metal was selected]
-(else-if: $batteryType is &quot;Lead-Acid&quot;)[The text to show if Lead-Acid was selected]
-(else-if: $batteryType is &quot;Ultracapacitor&quot;)[The text to show if Ultracapacitor was selected]
+Apart from the endless memes of England losing, the technology subreddits you browse have nothing new. Green energy posts seem to be appearing more and more now, after Reddit learned about your tastes.
 
-[[Keep Scrolling-&gt;Keep Scrolling 1]]
-[[Sleep-&gt;Sleep 1]] </tw-passagedata><tw-passagedata pid="24" name="Sleep 1" tags="" position="1002,2098" size="100,100">You sleep and continue with your road trip
+While browsing, 
 
-[[Wake Up-&gt;Wake Up 1]]</tw-passagedata><tw-passagedata pid="25" name="Keep Watching News 1" tags="" position="694,1740" size="100,100">A second story
+(if: $batteryType is &quot;Lithium-Ion&quot;)[You find an article about the Lithium-Ion type of electric vehicle battery 
+&lt;img src=&quot;img/LI_reddit.png&quot; alt=&quot;Reddit page with the article title, Electric vehicles are supposed to be green, but the truth is a bit murkier&quot;&gt;
+//Caption: Electric vehicles are supposed to be green, but the truth is a bit murkier//
+]
+(else-if: $batteryType is &quot;Nickel-Metal&quot;)[You find an article about Nickel-Metal type of electric vehicle battery 
+&lt;img src=&quot;img/N_reddit.png&quot; alt=&quot;Reddit page with the article title, Nickel mining: the hidden environmental cost of electric cars&quot;&gt;
+//Caption: Nickel mining: the hidden environmental cost of electric cars//
+]
+(else-if: $batteryType is &quot;Lead-Acid&quot;)[You find an article about the Lead-Acid type of electric vehicle battery 
+&lt;img src=&quot;img/LA_reddit.png&quot; alt=&quot;Reddit page with the article title, Environmental Implications of Lead-Acid and Lithium-Ion Batteries&quot;&gt;
+//Caption: Environmental Implications of Lead-Acid and Lithium-Ion Batteries//
+]
+
+[[Open Link-&gt;Post Title 1]]
+
+(enchant: ?Page, (background: #434f05))</tw-passagedata><tw-passagedata pid="18" name="Sleep 1" tags="" position="1002,2098" size="100,100">You sleep for the rest of the night, where you plan on going home the next morning.
+
+[[Wake Up-&gt;Wake Up 1]]
+
+(enchant: ?Page, (background: #4f3f05))</tw-passagedata><tw-passagedata pid="19" name="Keep Watching News 1" tags="" position="195,1748" size="100,100">A second story
 
 (if: $batteryType is &quot;Lithium-Ion&quot;)[Some news story for Lithium Ion]
 (else-if: $batteryType is &quot;Nickel-Metal&quot;)[The text to show if Nickel-Metal was selected]
@@ -106,98 +142,141 @@ To keep yourself extra awake and not bored, you decide to
 (else-if: $batteryType is &quot;Ultracapacitor&quot;)[The text to show if Ultracapacitor was selected]
 
 [[Keep Watching-&gt;Keep Watching News 2]]
-[[Sleep-&gt;Sleep 1]] </tw-passagedata><tw-passagedata pid="26" name="Keep Watching News 2" tags="" position="696,1895" size="100,100">The news ended
+</tw-passagedata><tw-passagedata pid="20" name="Keep Watching News 2" tags="" position="197,1903" size="100,100">The news ended
+</tw-passagedata><tw-passagedata pid="21" name="Post 1 Content" tags="" position="1206,1751" size="100,100">You scroll down the article and read the following
 
-[[Sleep-&gt;Sleep 1]] </tw-passagedata><tw-passagedata pid="27" name="Keep Scrolling 1" tags="" position="1206,1752" size="100,100">A second story
+(if: $batteryType is &quot;Lithium-Ion&quot;)[ 
+&lt;img src=&quot;img/LI_content.png&quot; alt=&quot;Mining and processing the minerals, plus the battery manufacturing process, involve substantial emissions of carbon. Lithium mining, needed to build the lithium ion batteries at the heart of today&#39;s EVs, has also been connected to other kinds of environmental harm. There have been mass fish kills related to lithium mining in Tibet, for example.&quot;&gt;
+//Caption: Mining and processing the minerals, plus the battery manufacturing process, involve substantial emissions of carbon.
 
-(if: $batteryType is &quot;Lithium-Ion&quot;)[Some news story for Lithium Ion]
-(else-if: $batteryType is &quot;Nickel-Metal&quot;)[The text to show if Nickel-Metal was selected]
-(else-if: $batteryType is &quot;Lead-Acid&quot;)[The text to show if Lead-Acid was selected]
-(else-if: $batteryType is &quot;Ultracapacitor&quot;)[The text to show if Ultracapacitor was selected]
+Lithium mining, needed to build the lithium ion batteries at the heart of today&#39;s EVs, has also been connected to other kinds of environmental harm. There have been mass fish kills related to lithium mining in Tibet, for example.//
+]
+(else-if: $batteryType is &quot;Nickel-Metal&quot;)[
+&lt;img src=&quot;img/N_content.png&quot; alt=&quot;can generate high loadings of dust in the air, dust that itself contains high concentrations of potentially toxic metals&quot;&gt;
+//Caption: can generate high loadings of dust in the air, dust that itself contains high concentrations of potentially toxic metals//
+]
+(else-if: $batteryType is &quot;Lead-Acid&quot;)[
+&lt;img src=&quot;img/LA_content.png&quot; alt=&quot;Exide battery recycling plants in other states have also been cited for contaminating the environment with lead. The WHO report also highlighted cases in Senegal, Dominican Republic, and Vietnam where contamination from lead-acid battery recycling resulted in negative health effects — including potentially the death of children.&quot;&gt;
+//Caption: Exide battery recycling plants in other states have also been cited for contaminating the environment with lead. 
 
-[[Keep Scrolling-&gt;Keep Scrolling 2]]
-[[Sleep-&gt;Sleep 1]] </tw-passagedata><tw-passagedata pid="28" name="Keep Scrolling 2" tags="" position="1202,1902" size="100,100">Only memes
+The WHO report also highlighted cases in Senegal, Dominican Republic, and Vietnam where contamination from lead-acid battery recycling resulted in negative health effects — including potentially the death of children.//
+]
 
-[[Sleep-&gt;Sleep 1]] </tw-passagedata><tw-passagedata pid="29" name="Radio 1" tags="" position="1365,1720" size="100,100">You play the radio it goes to the news. The following broadcast plays
+[[Keep Scrolling Reddit-&gt;Post 2]]
 
-if statement based on the battery
-[[Listen-&gt;Broadcast]]</tw-passagedata><tw-passagedata pid="30" name="Podcast 1" tags="" position="1526,1714" size="100,100">You turn on a podcast you&#39;ve been listening to and the host starts off with this
+(enchant: ?Page, (background: #4e4f05))</tw-passagedata><tw-passagedata pid="22" name="Wake Up 1" tags="" position="1002,2246" size="100,100">(if: $place is &quot;Hotel&quot;)[You wake up to the sunrise the next morning. Birds chirp outside your window. You get out of bed, check out of the hotel and head to your car that has been charging overnight.]
+(else:)[You wake up to the sunrise after sleeping in your backseat. You step out of the car to stretch and you hear birds chirping in the distance.]
 
-if statement based on the battery
-[[Listen-&gt;Broadcast]] </tw-passagedata><tw-passagedata pid="31" name="Keep Driving 1" tags="" position="1696,1600" size="100,100">You eventually drive for a while longer, and then you check into a place to stay. While preparing to sleep, you decide to scroll Reddit
+You walk to a coffee shop down the street and buy yourself breakfast before driving back. You finish breakfast and quickly down a cup of coffee before hitting the road.
 
-[[Continue-&gt;Keep Scrolling 1]] </tw-passagedata><tw-passagedata pid="32" name="Wake Up 1" tags="" position="1002,2248" size="100,100">You wake up, choose where to go next
+[[Continue-&gt;Brakes]] 
 
-[[Area 4]]
-[[Area 5]]
-[[Area 6]]</tw-passagedata><tw-passagedata pid="33" name="Area 4" tags="" position="800,2398" size="100,100">Something filler happens here
+(enchant: ?Page, (background: #4f3f05))</tw-passagedata><tw-passagedata pid="23" name="Brakes" tags="" position="1000,2599" size="100,100">While driving down a narrow portion some car decides to brake check in front of you. You decide to:
 
-[[Continue-&gt;Brakes]]</tw-passagedata><tw-passagedata pid="34" name="Area 5" tags="" position="1002,2398" size="100,100">Something filler happens here
-
-[[Continue-&gt;Brakes]]</tw-passagedata><tw-passagedata pid="35" name="Area 6" tags="" position="1201,2398" size="100,100">Something filler happens here
-
-[[Continue-&gt;Brakes]]</tw-passagedata><tw-passagedata pid="36" name="Brakes" tags="" position="1000,2599" size="100,100">Some car decides to brake check in front of you
 have a picture of a thin road shoulder wall and cars on the left hand side
 [[Swerve-&gt;Crashed Car]]
-[[Hit the Brakes-&gt;Tire Marks]]</tw-passagedata><tw-passagedata pid="37" name="Crashed Car" tags="" position="925,2749" size="100,100">You crashed your car, skid marks are everywhere on the pavement
+[[Hit the Brakes-&gt;Tire Marks]]
 
-Blurb here about the skid marks with the heavy vehicle
+(enchant: ?Page, (background: #4f3f05))</tw-passagedata><tw-passagedata pid="24" name="Crashed Car" tags="" position="925,2748" size="100,100">You crashed your car, skid marks are everywhere on the pavement. You&#39;re stuck in a ditch, but you miraculously came out without injuries.
 
-An if statement here about the type of battery and how it might affect the environment here
+While waiting for help to come, you think back to school and remember that your build of an electric vehicle is much heavier than its non-electric vehicle counterpart, mostly due to the weight of the battery. That means the skid marks from your tires end up releasing more particles out, most of which aren&#39;t good for the environment. 
 
-Your car will need to be scrapped 
+Your car will need to be scrapped.
 
-[[Continue-&gt;Disposal]] </tw-passagedata><tw-passagedata pid="38" name="Tire Marks" tags="" position="1075,2749" size="100,100">Something about skidding with the frames
+&lt;img src=&quot;img/skid_mark.jpg&quot; alt=&quot;tire skid marks on the road&quot;&gt;
 
-[[Continue-&gt;Continue 1]]</tw-passagedata><tw-passagedata pid="39" name="Continue 1" tags="" position="1195,2899" size="100,100">You keep going and continue road tripping
+[[Continue-&gt;End]] 
 
-[[Area 7]]
-[[Area 8]]
-[[Area 9]]</tw-passagedata><tw-passagedata pid="40" name="Area 7" tags="" position="1045,3049" size="100,100">Filler
+(enchant: ?Page, (background: #4f2105))
+(set: $crash to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="25" name="Tire Marks" tags="" position="1075,2749" size="100,100">You hit the brakes in time, and your tires leave skid marks on the road. You pass the other driver and keep driving.
 
-[[Charging Station-&gt;Charging Station 2]] </tw-passagedata><tw-passagedata pid="41" name="Area 8" tags="" position="1195,3049" size="100,100">Filler
+While driving back, you think back to school and remember that your build of an electric vehicle is much heavier than its non-electric vehicle counterpart, mostly due to the weight of the battery. That means the skid marks from your tires end up releasing more particles out, most of which aren&#39;t good for the environment. 
 
-[[Charging Station-&gt;Charging Station 2]] </tw-passagedata><tw-passagedata pid="42" name="Area 9" tags="" position="1345,3049" size="100,100">Filler
+&lt;img src=&quot;img/skid_mark.jpg&quot; alt=&quot;tire skid marks on the road&quot;&gt;
 
-[[Charging Station-&gt;Charging Station 2]] </tw-passagedata><tw-passagedata pid="43" name="Charging Station 2" tags="" position="1195,3199" size="100,100">You charge your vehicle, sleep
+[[Continue-&gt;End]]
 
-[[Continue-&gt;Timeskip]]</tw-passagedata><tw-passagedata pid="44" name="Timeskip" tags="" position="1195,3349" size="100,100">You keep the car and continue using it for the next couple of years
-Your car breaks down and needs to be taken to disposal
+(enchant: ?Page, (background: #4f2105))
+(set: $crash to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="26" name="End" tags="" position="996,3075" size="100,100">You eventually make it home safely and call it a day.
+(if: $crash is &quot;true&quot;)[Your car ended up going to disposal and your insurance covered the cost]
+(else:)[You keep the car and continue using it for the next couple of years.]
 
-[[Continue-&gt;Disposal]]</tw-passagedata><tw-passagedata pid="45" name="Disposal" tags="" position="902,3501" size="100,100">Depending on the battery picked, a prompt will show with a relevant thing from the environment
+[[Continue-&gt;End End]]
 
-[[Continue-&gt;End]]</tw-passagedata><tw-passagedata pid="46" name="End" tags="" position="900,3700" size="100,100">Wrapping up all the effects</tw-passagedata><tw-passagedata pid="47" name="Broadcast" tags="" position="1453,1901" size="100,100">Audio of one of us reading a news article about the battery
 
-JS delay until the audio finishes?
+(enchant: ?Page, (background: #4f2105))</tw-passagedata><tw-passagedata pid="27" name="Start" tags="" position="271,103" size="100,100">It&#39;s 8:30 AM on a Wednesday morning. The sun rises behind the engineering buildings as students file into their early morning classes. You walk into your 4th year electrical engineering course about sustainability vehicles. 
 
-[[Continue-&gt;Post Broadcast]]</tw-passagedata><tw-passagedata pid="48" name="Post Broadcast" tags="" position="1453,2051" size="100,100">You&#39;ve been driving for a bit, what do you do
+You&#39;re looking for the next big idea in green energy and are particularlly interested in electric vehicles. You&#39;ve been following it for a couple of years and are excited to be doing your capstone about electric vehicles. The class you are taking right now is something you&#39;re looking forward to.
 
-[[Keep Driving-&gt;Keep Driving 1]] 
-[[Check into a hotel and sleep-&gt;Pre Sleep 1]] </tw-passagedata><tw-passagedata pid="49" name="Pre Sleep 1" tags="" position="1453,2201" size="100,100">You check into a hotel and charge your car
-You fall asleep in your room immediately after driving
+[[Continue-&gt;Class]]
 
-[[Continue-&gt;Sleep 1]] </tw-passagedata><tw-passagedata pid="50" name="Start" tags="" position="271,103" size="100,100">Youre an eng student at an arbitrary university looking to build some stuff
+(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="28" name="Class" tags="" position="272,254" size="100,100">(set: $professorName to &quot;Debebe&quot;)
 
-Youre enrolled in a course that focuses on green technology
+Professor $professorName is currently teaching this class. You have been in contact with them regarding your capstone project and how to further improve the battery implementation in your design. Professor $professorName starts their lecture for their class. Their voice echoes through the lecture hall while they write notes on the whiteboard. 
 
-[[Continue-&gt;Class]]</tw-passagedata><tw-passagedata pid="51" name="Class" tags="" position="271,254" size="100,100">Your professor talks about some ECE stuff and gets on to solar panels and other technologies related to green energy
+[[Continue-&gt;Class Notes 1]]
 
-You intently listen and take notes
+(enchant: ?Page, (background: #384f05))</tw-passagedata><tw-passagedata pid="29" name="Class Notes 1" tags="" position="270,404" size="100,100">You intently listen and take notes as Professor $professorName talks
 
-[[Continue-&gt;Class Notes 1]]</tw-passagedata><tw-passagedata pid="52" name="Class Notes 1" tags="" position="270,404" size="100,100">Something good about electric vehicles here
+&lt;img src=&quot;img/LI_chalkboard_1.png&quot; alt=&quot;Lithium-ion batteries have the properties: high energy efficacy, high unit energy storage. used in many rechargable electronic technologies&quot;&gt;
+//Caption: Lithium-ion batteries have the properties: high energy efficacy, high unit energy storage. used in many rechargable electronic technologies//
 
-[[Next Slide-&gt;Class Notes 2]]</tw-passagedata><tw-passagedata pid="53" name="Class Notes 2" tags="" position="269,554" size="100,100">Some more information on green energy battery
+[[Next Slide-&gt;Class Notes 2]]
 
-[[Next Slide-&gt;Class Notes 3]]</tw-passagedata><tw-passagedata pid="54" name="Class Notes 3" tags="" position="269,704" size="100,100">Class Dismissed. Test 2 on Wednesday
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="30" name="Class Notes 2" tags="" position="269,552" size="100,100">You intently listen and take notes as Professor $professorName talks
 
-[[Leave Class-&gt;Enter a Draw]]
-</tw-passagedata><tw-passagedata pid="55" name="Enter a Draw" tags="" position="267,872" size="100,100">You walk around campus and you see a raffle to win and build your own electric vehicle hosted by a green energy promotion company
+&lt;img src=&quot;img/LI_chalkboard_1.png&quot; alt=&quot;advancements in the lithium-ion battery will allow for faster charging. researchers have successfully created lithium-ion batteries that can charge within 10 minutes&quot;&gt;
+//Caption: advancements in the lithium-ion battery will allow for faster charging. researchers have successfully created lithium-ion batteries that can charge within 10 minutes//
 
-You think to yourself and think it&#39;ll be pretty cool to actually own one, consider how expensive it is for a student
+[[Next Slide-&gt;Class Notes 3]]
 
-You decide why not and enter your throwaway contact information 
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="31" name="Class Notes 3" tags="" position="269,703" size="100,100">Professor $professorName ends their class after an hour. You decide to talk with them after class a bit about new developments in electric vehicles and what it means for the world. You know for a fact that this is the path you want to go down, and you are hoping to join a company that develops electric vehicles. 
 
-[[Continue-&gt;Roadtrip Intro]]</tw-passagedata><tw-passagedata pid="56" name="Blank" tags="" position="145,1086" size="100,100"></tw-passagedata></tw-storydata>
+After a couple of minutes of conversing, you leave class to join your teammates on your capstone.
+
+[[Leave Class-&gt;Roadtrip Intro]]
+
+(enchant: ?Page, (background: #134f05))</tw-passagedata><tw-passagedata pid="32" name="Blank" tags="" position="145,1086" size="100,100"></tw-passagedata><tw-passagedata pid="33" name="Post Title 1" tags="" position="829,1817" size="100,100">You open the article and scroll through it. You decide to read the article and come across a few excerpts
+
+(if: $batteryType is &quot;Lithium-Ion&quot;)[ 
+&lt;img src=&quot;img/LI_title.png&quot; alt=&quot;CBC article, titled Electric vehicles are supposed to be green, but the truth is a bit murkier&quot;&gt;
+//Caption: Electric vehicles are supposed to be green, but the truth is a bit murkier//
+]
+(else-if: $batteryType is &quot;Nickel-Metal&quot;)[ 
+&lt;img src=&quot;img/N_title.png&quot; alt=&quot;The Guardian article, titled Nickel mining: the hidden environmental cost of electric cars&quot;&gt;
+//Caption: Nickel mining: the hidden environmental cost of electric cars//
+]
+(else-if: $batteryType is &quot;Lead-Acid&quot;)[
+&lt;img src=&quot;img/LA_title.png&quot; alt=&quot;Forbes article, titled Environmental Implications of Lead-Acid and Lithium-Ion Batteries&quot;&gt;
+//Caption: Environmental Implications of Lead-Acid and Lithium-Ion Batteries//
+]
+
+[[Keep Scrolling-&gt;Post 1 Content]]
+
+(enchant: ?Page, (background: #484f05))</tw-passagedata><tw-passagedata pid="34" name="Post 2" tags="" position="1392,1770" size="100,100">You keep scrolling reddit and you stumble upon a related video. You open it to watch it.
+
+&lt;img src=&quot;img/video_1.png&quot; alt=&quot;Reddit post titled, Mining for rare-earth metals for the production of electric batteries contaminates surrounding environment. Pollutants damage local agriculture and have caused serious illnesses in local residents. The video has the following text, the bad side is potential pollution and water shortages. They take the water, life is gone&quot;&gt;
+//Caption: Mining for rare-earth metals for the production of electric batteries contaminates surrounding environment. Pollutants damage local agriculture and have caused serious illnesses in local residents. 
+the bad side is potential pollution and water shortages. They take the water, life is gone//
+
+[[Keep Watching-&gt;Post 2 Content 1]]
+
+(enchant: ?Page, (background: #4f4e05))</tw-passagedata><tw-passagedata pid="35" name="Post 2 Content 1" tags="" position="1392,1920" size="100,100">You keep watching the video
+
+&lt;img src=&quot;img/video_2.png&quot; alt=&quot;Second frame from the video, with text, When it rains hard, it seems like blood running down&quot;&gt;
+//Caption: When it rains hard, it seems like blood running down//
+
+[[Keep Watching-&gt;Post 2 Content 2]]
+
+(enchant: ?Page, (background: #4f4b05))</tw-passagedata><tw-passagedata pid="36" name="Post 2 Content 2" tags="" position="1392,2070" size="100,100">You keep watching the video
+&lt;img src=&quot;img/video_3.png&quot; alt=&quot;Third frame of the video, with text, the rice was lost, the yams, banana, yucca, fish, all of that has been lost. Why? because there is so much pollution&quot;&gt;
+//Caption: Third frame of the video, with text, the rice was lost, the yams, banana, yucca, fish, all of that has been lost. Why? because there is so much pollution//
+
+After finishing the video, you decide to call it a day and head to sleep.
+
+[[Sleep-&gt;Sleep 1]] 
+
+(enchant: ?Page, (background: #4f4605))</tw-passagedata><tw-passagedata pid="37" name="End End" tags="" position="996,3225" size="100,100">The articles you saw last night still linger in your head, and you wonder what else you&#39;ve been working on has effects in other places of the world.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
